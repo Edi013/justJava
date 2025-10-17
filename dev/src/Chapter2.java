@@ -19,6 +19,14 @@ public class Chapter2 {
 
     }
 
+    public void printTextBlock(){
+        var var = """
+                   squirrel \s
+                   pigeon   \
+                   termite""";
+        System.out.print(var);
+    }
+
     private class Animal{
         public void makeSound(){
             System.out.println("Animal sound...");
@@ -31,6 +39,7 @@ public class Chapter2 {
             System.out.println("Meow !");
         }
     }
+
 }
 
 

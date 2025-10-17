@@ -5,15 +5,7 @@ public class Main {
         var chapter2 = new Chapter2();
         chapter2.tryInstanceOfWithPolymorphism();
 
-        var blocky = """
-                   squirrel \s
-                   pigeon   \
-                   termite""";
-        System.out.print(blocky);
-
-        var var = "";
-
-
+        Ex1Radar.startEfficientRadar();
     }
 
 }
