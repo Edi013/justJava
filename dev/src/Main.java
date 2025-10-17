@@ -6,6 +6,7 @@ public class Main {
         chapter2.tryInstanceOfWithPolymorphism();
 
         Ex1Radar.startEfficientRadar();
+
     }
 
 }
