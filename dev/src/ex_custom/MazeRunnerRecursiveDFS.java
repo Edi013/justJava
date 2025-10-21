@@ -1,3 +1,5 @@
+package ex_custom;
+
 public class MazeRunnerRecursiveDFS {
 
     public static boolean canEscape(char[][] maze, int startRow, int startCol) {

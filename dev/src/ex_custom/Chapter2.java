@@ -1,3 +1,5 @@
+package ex_custom;
+
 public class Chapter2 {
     public void tryInstanceOfWithPolymorphism(){
         var animal = new Animal();
@@ -40,6 +42,11 @@ public class Chapter2 {
         }
     }
 
+    public static void main(String[] args) {
+        var chapter2 = new Chapter2();
+        chapter2.tryInstanceOfWithPolymorphism();
+
+    }
 }
 
 

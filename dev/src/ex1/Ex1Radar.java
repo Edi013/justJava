@@ -1,3 +1,5 @@
+package ex1;
+
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
@@ -85,5 +87,10 @@ public class Ex1Radar {
         } catch (NumberFormatException e) {
             return -1;
         }
+    }
+
+    public static void main(String[] args) {
+        Ex1Radar.startEfficientRadar();
+
     }
 }

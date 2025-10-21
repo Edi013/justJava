@@ -1,3 +1,5 @@
+package ex_custom;
+
 import java.util.Stack;
 
 public class MazeRunnerIterativeDFS {
