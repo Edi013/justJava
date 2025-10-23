@@ -7,5 +7,11 @@ public class Main {
         chapter2.tryInstanceOfWithPolymorphism();
 
         Ex1Radar.startEfficientRadar();
+
+          final var one = 1;
+        int penguin = 50, turtle = 75;
+        boolean older = penguin>= turtle;
+         if (older = true) System.out.println("Success");
+
     }
 }
