@@ -1,5 +1,6 @@
 package ex5_chapter10;
 
+import java.util.Optional;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;
 
@@ -15,4 +16,18 @@ public class OptionalTest {
         optional.orElseThrow(RuntimeException::new);
     }
 
+
+    private static void howToNotManipulateAnOptional(Optional<Integer> optional) {
+        if (optional.isPresent()) {  // outer if
+            var num = optional.get();
+            var string = "" + num;
+            if (string.length() == 3) // inner if
+                System.out.println(string);
+        }
+    }
+    private static void howToManipulateAnOptional(Optional<Integer> optional) {
+        optional.map(n -> "" + n)            // part 1
+                .filter(s -> s.length() == 3)     // part 2
+                .ifPresent(System.out::println);  // part 3
+    }
 }

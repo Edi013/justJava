@@ -5,7 +5,7 @@ public class Main {
         Service oldService = new SimpleService();
 
         // abstract classes cannot be instantiated
-            //uncomment this to test -> ServiceDecorator baseDecoratorInstance = new ServiceDecorator(oldService);
+        //ServiceDecorator baseDecoratorInstance = new ServiceDecorator(oldService);
 
         // Using runtime polymorphism, we can still use the base abstract decorator class
         ServiceDecorator loggingDecorator = new LoggingDecorator(oldService);
