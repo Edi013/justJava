@@ -1,4 +1,4 @@
-package week_2_thursday_meeting;
+package ex2_week_2_thursday_meeting;
 
 public interface Test {
     private String name() {
