@@ -6,7 +6,7 @@ import java.util.stream.*;
 
 public class CollectorsTest {
     public void main(){
-        test6_mapping();
+        test11_flatMap();
     }
 
     private void test1(){
@@ -158,6 +158,15 @@ public class CollectorsTest {
                 .flatMapToDouble(x -> DoubleStream.of(x));
         LongStream longs = integerList.stream()
                 .flatMapToLong(x -> LongStream.of(x));
+    }
+
+    private void test11_flatMap(){
+        List<Integer> x1 = List.of(1, 2, 3);
+        List<Integer> x2 = List.of(4, 5, 6);
+        List<Integer> x3 = List.of();
+        Stream.of(x1, x2, x3)
+                .flatMap(x -> x.stream())
+                .forEach(System.out::print);
     }
 
 }
