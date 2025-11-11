@@ -1,23 +1,22 @@
-package ex_java_practice;
+package ex_java_practice_Lambdas_Collections_Streams;
 
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Consumer;
-import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class Lambdas_Collections_Streams {
+public class Section1 {
 
-    public static void main(){
+    public static void main(String[] args){
         section1_1();
         section1_2(List.of("Name1", "Name2", "Name3333", "Name444", "Name5555","Name6"));
         section1_3();
+        section1_4();
     }
 
     public static void section1_1(){
@@ -68,5 +67,4 @@ public class Lambdas_Collections_Streams {
         System.out.println("Sorted names:");
         names.forEach(name -> System.out.println(name));
     }
-
 }
