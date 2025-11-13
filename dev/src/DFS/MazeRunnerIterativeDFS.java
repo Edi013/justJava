@@ -1,4 +1,4 @@
-package ex_custom;
+package DFS;
 
 import java.util.Stack;
 
