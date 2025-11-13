@@ -1,4 +1,3 @@
-/*
 package ex_custom;
 
 import java.util.ArrayList;
@@ -67,12 +66,26 @@ public class Freestyle {
         }
     }
 
-    public static <E extends CharSequence> List<? super E> doIt(List<E> nums){
-        
-    }
+//    public static <E extends CharSequence> List<? super E> doIt(List<E> nums){
+//    }
 
-    public void Test1(){
-        class Baap {     public int h = 4;     public int getH() {         System.out.println("Baap " + h);         return h;     } }  public class Beta extends Baap {     public int h = 44;     public int getH() {         System.out.println("Beta " + h);         return h;     }     public static void main(String[] args) {         Baap b = new Beta();         System.out.println(b.h + " " + b.getH());         Beta bb = (Beta) b;         System.out.println(bb.h + " " + bb.getH());     } }
+    class Baap {
+        public int h = 4;
+        public int getH() {
+            System.out.println("Baap " + h);
+            return h;
+        }
+    }
+    public class Beta extends Baap {
+        public int h = 44;
+        public int getH() {
+            System.out.println("Beta " + h);
+            return h;
+        }
+        public void main(String[] args) {
+            Baap b = new Beta();
+            System.out.println(b.h + " " + b.getH());
+            Beta bb = (Beta) b;
+            System.out.println(bb.h + " " + bb.getH());     }
     }
 }
-*/
