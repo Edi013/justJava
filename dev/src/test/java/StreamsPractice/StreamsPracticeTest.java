@@ -78,24 +78,24 @@ class StreamsPracticeTest {
         double avg = service.averageOfList(List.of(10, 20, 30));
         assertEquals(20.0, avg);
     }
-//
-//    // 9. TOP N RESULTS (sorted + limit)
-//    @Test
-//    void shouldReturnTop3Descending() {
-//        List<Integer> nums = List.of(5, 2, 10, 8, 1);
-//        List<Integer> result = service.topNDescending(nums, 3);
-//        assertEquals(List.of(10, 8, 5), result);
-//    }
-//
-//    // 10. WORD FREQUENCY (groupingBy + counting)
-//    @Test
-//    void shouldCountWordFrequency() {
-//        List<String> words = List.of("a", "b", "a", "c", "b", "a");
-//
-//        Map<String, Long> freq = service.wordFrequency(words);
-//
-//        assertEquals(3L, freq.get("a"));
-//        assertEquals(2L, freq.get("b"));
-//        assertEquals(1L, freq.get("c"));
-//    }
+
+    // 9. TOP N RESULTS (sorted + limit)
+    @Test
+    void shouldReturnTop3Descending() {
+        List<Integer> nums = List.of(5, 2, 10, 8, 1);
+        List<Integer> result = service.topNDescending(nums, 3);
+        assertEquals(List.of(10, 8, 5), result);
+    }
+
+    // 10. WORD FREQUENCY (groupingBy + counting)
+    @Test
+    void shouldCountWordFrequency() {
+        List<String> words = List.of("a", "b", "a", "c", "b", "a");
+
+        Map<String, Long> freq = service.wordFrequency(words);
+
+        assertEquals(3L, freq.get("a"));
+        assertEquals(2L, freq.get("b"));
+        assertEquals(1L, freq.get("c"));
+    }
 }

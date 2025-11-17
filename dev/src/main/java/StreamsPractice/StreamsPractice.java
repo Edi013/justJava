@@ -71,9 +71,20 @@ public class StreamsPractice {
 
     }
 
-//    public List<Integer> topNDescending(List<Integer> nums, int i) {
-//    }
-//
-//    public Map<String, Long> wordFrequency(List<String> words) {
-//    }
+    public List<Integer> topNDescending(List<Integer> nums, int i) {
+        return nums.stream()
+                .sorted((x,y)-> y-x)
+                .limit(i)
+                .collect(Collectors.toList());
+    }
+
+    public Map<String, Long> wordFrequency(List<String> words) {
+        var result =  words.stream()
+                .filter(x -> !x.isEmpty())
+                .collect(Collectors.groupingBy(
+                        (x)-> String.valueOf(x.charAt(0)),
+                        Collectors.counting()
+                        ));
+        return result;
+    }
 }
